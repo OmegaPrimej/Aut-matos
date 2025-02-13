@@ -1,0 +1,56 @@
+import random
+import os
+
+#Autómatos Genesis
+PROJECT_NAME = "Autómatos"
+PROJECT_VERSION = "1.0"
+PROJECT_AUTHOR = "Your Name"
+PROJECT_DESCRIPTION = "Autonomous Code Generation"
+
+# Define a list of possible code snippets # This line was causing the error, it has been commented out
+code_snippets = [
+    "print('Hello World!')",
+    "import random; print(random.randint(1, 100))",
+    "import time; print(time.time())",
+    "def main(): print('Autonomous Code Generation'); main()",
+    "import os; print(os.getcwd())",
+    "import sys; print(sys.version)",
+]
+
+def generate_code():
+    # Randomly select and execute a code snippet
+    snippet = random.choice(code_snippets)
+    exec(snippet)
+    
+    # Recursive loop to continue generating code
+    generate_code()
+
+def init_project():
+    # Create project directories
+    os.makedirs("src", exist_ok=True)
+    os.makedirs("data", exist_ok=True)
+    os.makedirs("logs", exist_ok=True)
+    
+    # Start generating code
+    generate_code()
+
+def main():
+    print(f"{PROJECT_NAME} v{PROJECT_VERSION}")
+    print(f"Author: {PROJECT_AUTHOR}")
+    print(f"Description: {PROJECT_DESCRIPTION}")
+    
+    # Initialize the project
+    init_project()
+
+if __name__ == "__main__":
+    main()
+
+"""autonomous code generation project:"""
+FUTURE Concepts
+""" *FIRE (Flexible Intelligent Rapid Evolution)* """
+""" *Automa (Autonomous Code Generation)* """
+""" *Genexus (Code Generation Nexus)* """
+""" *Pyrus (Python Rapid Universal Synthesis)* """
+""" *Codexa (Autonomous Code Generation System)* """
+
+Choose the one that resonates with you the most!"""
