@@ -3,7 +3,6 @@
 # FIRE - Flexible Intelligent Rapid Evolution
 # Autonomous Code Generation using Python
 
-# Rest of your code here...
 import random
 import os
 import ast
