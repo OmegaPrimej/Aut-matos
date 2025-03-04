@@ -4,12 +4,11 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        python-version: [3.8, 3.9, 3.10]  # Update this to use valid Python versions
+        python-version: [3.8, 3.9, 3.10]
 
     steps:
     - uses: actions/checkout@v2
@@ -25,10 +24,7 @@ jobs:
       run: |
         python manage.py test
 
-
-
-
-Dependencies
+    - name: Dependencies
       uses: actions/cache@v3
       with:
         path: ~/.cache/pip
@@ -54,6 +50,24 @@ Dependencies
 
     - name: Check Installed Packages
       run: pip freeze
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
