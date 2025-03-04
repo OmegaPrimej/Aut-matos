@@ -23,5 +23,5 @@ jobs:
 
       - name: Run tests
         run: |
-          cd Aut-matos  # Update this to the correct path
+          cd Aut-matos/Aut-matos  # Update this to the correct path
           python manage.py test
