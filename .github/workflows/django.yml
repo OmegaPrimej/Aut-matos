@@ -24,4 +24,9 @@ jobs:
       - name: Run tests
         run: |
           python manage.py test
-        working-directory: ./Aut-matos
+
+
+
+
+
+
